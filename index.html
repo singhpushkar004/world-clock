@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <script src="bootstrap.bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body{
+           background-image: url(download.jpeg);
+           
+           font-weight: 100px;
+           background-repeat: no-repeat;
+           height: 100%;
+           background-size: cover;
+           
+        }
+      .log-card {
+        box-shadow: 0px 10px 10px white;
+        max-height: 300px;
+        max-width: 300px;
+        color: yellow;
+        
+      }
+      .log-card:hover{
+        transform: scale(1.1);
+        transition: all ease-in 1s;
+      } 
+      #head{
+        font-size: 70px; 
+        font-family: 'Caveat', cursive;
+        opacity: 0.7;
+        text-shadow:2px 5px 5px rgb(242, 80, 15);
+        color: yellow;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+     <div class="outer">
+        <header>
+            <h1 align="center" id="head" class="mt-5 mb-5">World's Clock</h1>
+        </header>
+     </div>
+        <div class="row">
+            <div class="col-sm-4 p-4 ">
+                <div class="log-card rounded">
+                    <h1 align="center">Indian Time</h1>
+                  <h1 id="india" align="center"></h1>
+                </div>
+            </div>
+            <div class="col-sm-4 p-4 ">
+                <div class="log-card rounded">
+                    <h1 align="center">America</h1>
+                   <h1 id="usa" align="center"></h1>
+                </div>
+            </div>
+            <div class="col-sm-4 p-4 me-0">
+                <div class="log-card rounded">
+                    <h1 align="center">China</h1>
+                   <h1 id="china" align="center"></h1>
+                </div>
+            </div>
+
+
+    </div>
+  </body>
+</html>
